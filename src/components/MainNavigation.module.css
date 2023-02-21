@@ -16,7 +16,9 @@
   color: var(--color-primary-400);
 }
 
+/* link component renders a regular anchor elm not a LINK or a NAVLINK elm */
 .list a:hover,
+/* if a link has the active class */
 .list a.active {
   color: var(--color-primary-800);
   text-decoration: underline;
