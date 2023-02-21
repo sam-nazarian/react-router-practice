@@ -1,15 +1,15 @@
 import { Outlet } from 'react-router-dom';
 
 import MainNavigation from '../components/MainNavigation';
-import classes from './Root.module.css';
 
+// Put everything that applies to every page here
 function RootLayout() {
   return (
     <>
       <MainNavigation />
 
-      <main className={classes.content}>
-        {/* Child routes should be rendered to this */}
+      <main>
+        {/* Place where child routes should be rendered to */}
         <Outlet />
       </main>
     </>
