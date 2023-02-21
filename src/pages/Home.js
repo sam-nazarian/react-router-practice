@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 // Name folder pages to show that the components inside of it will be loaded with the help of routing
 function HomePage() {
   return (
