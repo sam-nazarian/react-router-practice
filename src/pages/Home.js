@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 // Name folder pages to show that the components inside of it will be loaded with the help of routing
 function HomePage() {
-  const navigate = useNavigate();
+  const navigate = useNavigate(); //navigate is a function
 
   function navigateHandler() {
     navigate('/products');
