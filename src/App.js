@@ -21,13 +21,14 @@ const router = createBrowserRouter(routeDefinitions);
 const router = createBrowserRouter([
   {
     // When RootLayout throws an error, it goes here (also errors bubble up to here)
-    path: '/',
+    path: '/', //paths starting with / are absolute paths, (should handle all pages starting with '/' & all child paths should also start with '/')
     element: <RootLayout />, //RootLayout & it's path acts as a parent/wrapper to children elms below
     errorElement: <ErrorPage />,
     children: [
-      { path: '/', element: <HomePage /> },
-      { path: '/products/', element: <ProductsPage /> },
-      { path: '/products/:productId', element: <ProductDetailPage /> }, //don't hardcode something that's dynamic & will change (path parameters / dynamic path)
+      // appened to the parent route
+      { path: '', element: <HomePage /> },
+      { path: 'products/', element: <ProductsPage /> },
+      { path: 'products/:productId', element: <ProductDetailPage /> }, //don't hardcode something that's dynamic & will change (path parameters / dynamic path)
     ],
   },
 ]);

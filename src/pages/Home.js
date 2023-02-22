@@ -14,10 +14,11 @@ function HomePage() {
       <p>
         {/* ahref loses context, or application-wide state as it sends a new request to the server */}
         {/* listens for clicks & prevents browser default of sending http request, based on the route definitions loads the proper content/components */}
-        Go to <Link to="/products">the list of products</Link>
-        <p>
-          <button onClick={navigateHandler}>Navigate</button>
-        </p>
+        Go to <Link to="products">the list of products</Link>
+      </p>
+
+      <p>
+        <button onClick={navigateHandler}>Navigate</button>
       </p>
     </>
   );
